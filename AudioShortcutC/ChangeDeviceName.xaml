@@ -1,0 +1,20 @@
+﻿<Window x:Class="AudioShortcutC.ChangeDeviceName"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AudioShortcutC"
+        mc:Ignorable="d"
+        Title="Change Device Name" Height="250" Width="429" MaxHeight="250" WindowStyle="ToolWindow">
+    <Grid Margin="0" Background="#00000000">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="textBoxDeviceName" Height="23" Margin="0,66,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" HorizontalAlignment="Center" MinWidth="100" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="{x:Null}" ClipToBounds="True"/>
+        <Label Content="Controller Information" HorizontalAlignment="Center" Margin="0,99,0,0" VerticalAlignment="Top" Height="26" Width="128"/>
+        <Label x:Name="labelControllerInformation" Content="NULL" HorizontalAlignment="Center" Margin="0,125,0,0" RenderTransformOrigin="6.75,0.385" Height="26" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Button x:Name="buttonChangeNameSubmit" Content="Change" HorizontalAlignment="Center" Margin="0,156,0,0" VerticalAlignment="Top" Width="112" Click="ButtonChangeNameSubmit_Click" Height="29" RenderTransformOrigin="3.421,0.25"/>
+        <Label Content="Device Name" Margin="0,35,0,0" VerticalAlignment="Top" Height="26" HorizontalAlignment="Center" Width="80"/>
+
+    </Grid>
+</Window>

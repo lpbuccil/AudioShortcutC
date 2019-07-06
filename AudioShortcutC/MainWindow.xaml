@@ -1,0 +1,32 @@
+﻿<Window x:Class="AudioShortcutC.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AudioShortcutC"
+        mc:Ignorable="d"
+        Title="AudioShortcut" Height="366" Width="419">
+
+    <Grid Loaded="Grid_Loaded">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <ListBox x:Name="ListBoxAudioDevices" HorizontalAlignment="Left" Height="268" Margin="10,10,0,0" VerticalAlignment="Top" Width="201" MouseDoubleClick="ListBoxAudioDevices_MouseDoubleClick"/>
+        <Button x:Name="buttonSubmit" Content="Locate" HorizontalAlignment="Left" Margin="250,62,0,0" VerticalAlignment="Top" Width="112" Click="ButtonSubmit_Click" Height="30"/>
+        <TextBlock HorizontalAlignment="Left" Margin="222,17,0,0" TextWrapping="Wrap" Text="Select NirCMD parent directory or select install directory." VerticalAlignment="Top" Height="49" Width="169"/>
+        <Button x:Name="buttonCreate" Content="Create" HorizontalAlignment="Left" Margin="250,105,0,0" VerticalAlignment="Top" Width="112" IsEnabled="False" Click="ButtonCreate_Click" Height="30"/>
+        <Image HorizontalAlignment="Left" Height="57" Margin="278,148,0,0" VerticalAlignment="Top" Width="57"/>
+        <Image HorizontalAlignment="Left" Height="57" Margin="278,148,0,0" VerticalAlignment="Top" Width="57"/>
+        <Image HorizontalAlignment="Left" Height="57" Margin="278,148,0,0" VerticalAlignment="Top" Width="57"/>
+        <Image x:Name="ImageSpeakers" HorizontalAlignment="Left" Height="57" Margin="278,221,0,0" VerticalAlignment="Top" Width="57" MouseLeftButtonDown="ImageSpeakers_MouseLeftButtonDown"/>
+        <Image x:Name="ImageHeadset" HorizontalAlignment="Left" Height="57" Margin="278,148,0,0" VerticalAlignment="Top" Width="57" MouseLeftButtonDown="ImageHeadset_MouseLeftButtonDown"/>
+        <RadioButton x:Name="RadioButtonHeadset" Content="" HorizontalAlignment="Left" Margin="235,167,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.523,-0.373"/>
+        <RadioButton x:Name="RadioButtonHeadset_Copy" Content="" HorizontalAlignment="Left" Margin="235,167,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.523,-0.373"/>
+        <RadioButton x:Name="RadioButtonHeadset_Copy1" Content="" HorizontalAlignment="Left" Margin="235,167,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.523,-0.373"/>
+        <RadioButton x:Name="RadioButtonHeadset_Copy2" Content="" HorizontalAlignment="Left" Margin="235,167,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.523,-0.373"/>
+        <RadioButton x:Name="RadioButtonSpeaker" Content="" HorizontalAlignment="Left" Margin="235,240,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.523,-0.373"/>
+        <TextBlock x:Name="LabelStatus" HorizontalAlignment="Left" Margin="10,288,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="38" Width="391"/>
+
+    </Grid>
+</Window>
